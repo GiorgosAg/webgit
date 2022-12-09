@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Φόρμα Πληρωμής</title>
+</head>
+<body>
+    
+    <h1>Φόρμα Πληρωμής</h1>
+    <div>
+        <p>Τα υποχεωτικά πεδία ακολουθούνται απο <abbr title="required field">*</abbr></p>
+    </div>
+    <h2>Προσωπικά Στοιχεία</h2>
+    <fieldset>
+        <legend>Title</legend>
+        <div>
+            <label for="mr">Mr.</label>
+            <input type="radio" name="title" id="mr" value="1">
+        </div>
+        <div>    
+            <label for="mrs">Mrs.</label>
+            <input type="radio" name="title" id="mrs" value="2">
+        </div>
+        <div>
+            <label for="dr">Dr.</label>
+            <input type="radio" name="title" id="dr" value="3">
+        </div>
+        
+    </fieldset>
+    <div>
+        <label for="name">Name<abbr title="required field">*</abbr></label>
+        <input type="text" name="name" id="name" required>
+    </div>
+    <div>
+        <label for="email">E-mail<abbr title="required field">*</abbr></label>
+        <input type="email" name="email" id="email" required>
+    </div>
+    <div>
+        <label for="pass">Password<abbr title="required field">*</abbr></label>
+        <input type="password" name="pass" id="pass" required>
+    </div>
+    <h2>Πληροφορίες Πληρωμής</h2>
+    <div>
+        <label for="level">Card type</label>
+        <select name="level" id="level">
+            <option value="1">Visa</option>
+            <option value="2">Mastercard</option>
+        </select>
+    </div>
+    <div>
+        <label for="cardnum">Card number<abbr title="required field">*</abbr></label>
+        <input type="text" name="cardnum" id="cardnum" required>
+    </div>
+    <div>
+        <label for="expdate">Expiration Date<abbr title="required field">*</abbr></label>
+        <input type="text" id="expdate" name="expdate" placeholder="MM/YY" max="5" required
+            pattern="0[1-9]|1[0-2]\/[0-9][0-9]">
+    </div>
+    <div>
+        <input type="submit" value="Προχωρήστε στην πληρωμή">
+    </div>
+</body>
+</html>
